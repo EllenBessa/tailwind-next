@@ -1,8 +1,9 @@
 import { NavItem } from "./NavItem"
+import { Profile } from "./Profile";
+import { UsedSpaceWidget } from "./UsedSpaceWidget";
 
 import { Logo } from "./Logo";
 import {Search ,Home, BarChart, SquareStack, CheckSquare, Flag, Users, LifeBuoy, Cog} from "lucide-react"
-import { UsedSpaceWidget } from "./UsedSpaceWidget";
 
 export function Sidebar() {
   return(
@@ -30,6 +31,10 @@ export function Sidebar() {
           </nav>
 
           <UsedSpaceWidget/>
+
+          <div className="h-px bg-zinc-200"></div>
+
+          <Profile/>
         </div>
     </aside>
   )
